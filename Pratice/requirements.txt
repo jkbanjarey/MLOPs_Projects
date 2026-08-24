@@ -1,0 +1,14 @@
+pandas
+numpy
+mlflow
+python-box
+scikit-learn
+python-box
+ensure
+flask
+flask-cors
+pyYAML
+tqdm
+joblib
+types-PyYAML
+requests
