@@ -1,0 +1,2 @@
+Validation status: False
+Column 'fixed acidity,volatile acidity,citric acid,residual sugar,chlorides,free sulfur dioxide,total sulfur dioxide,density,pH,sulphates,alcohol,quality' is in the data but not in the schema.
