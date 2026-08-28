@@ -5,6 +5,7 @@ from src.datascience.pipeline.data_ingestion_pipeline import DataIngestionTraini
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience.pipeline.data_validation_pipeline import DataValidationTrainingPipeline
+from src.datascience.pipeline.model_trainer_pipeline import ModelTrainerPipeline
 
 
 STAGE_NAME = "Data Ingestion Stage"
@@ -38,3 +39,14 @@ try:
     logger.info(f"----{STAGE_NAME} completed ----")
 except Exception as e:
     logger.error(f"Error occurred while initiating data transformation: {e}")
+
+
+STAGE_NAME = "Model Trainer Stage"
+
+try:
+    logger.info(f"----{STAGE_NAME} started ----")
+    pipeline = ModelTrainerPipeline()
+    pipeline.initiate_model_trainer()
+    logger.info(f"----{STAGE_NAME} completed ----")
+except Exception as e:
+    logger.error(f"Error occurred while initiating model trainer: {e}")
