@@ -5,6 +5,7 @@ from src.datascience.pipeline.data_ingestion_pipeline import DataIngestionTraini
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience.pipeline.data_validation_pipeline import DataValidationTrainingPipeline
+from src.datascience.pipeline.model_evaluation_pipeline import ModelEvaluationPipeline
 from src.datascience.pipeline.model_trainer_pipeline import ModelTrainerPipeline
 
 
@@ -50,3 +51,15 @@ try:
     logger.info(f"----{STAGE_NAME} completed ----")
 except Exception as e:
     logger.error(f"Error occurred while initiating model trainer: {e}")
+
+
+
+STAGE_NAME = "Model Evaluation Stage"
+
+try:
+    logger.info(f"----{STAGE_NAME} started ----")
+    pipeline = ModelEvaluationPipeline()
+    pipeline.initiate_model_evaluation()
+    logger.info(f"----{STAGE_NAME} completed ----")
+except Exception as e:
+    logger.error(f"Error occurred while initiating model evaluation: {e}")
