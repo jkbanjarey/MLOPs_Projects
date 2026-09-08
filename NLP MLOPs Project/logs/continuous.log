@@ -28,3 +28,7 @@
 [2026-09-07 22:12:06,760: INFO : common : created directory at: artifacts]
 [2026-09-07 22:12:06,760: INFO : common : created directory at: artifacts/data_ingestion]
 [2026-09-07 22:12:07,065: INFO : main : Completed Data Ingestion stage]
+[2026-09-08 23:45:16,552: INFO : common : yaml file: config\config.yaml loaded successfully]
+[2026-09-08 23:45:16,555: INFO : common : yaml file: params.yaml loaded successfully]
+[2026-09-08 23:45:16,557: INFO : common : created directory at: artifacts]
+[2026-09-08 23:45:16,559: INFO : common : created directory at: artifacts/data_transformation]
